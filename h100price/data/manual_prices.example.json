@@ -1,0 +1,16 @@
+{
+  "prices": [
+    {
+      "source": "Private quote",
+      "market": "rental",
+      "title": "NVIDIA H100 80GB quoted cluster",
+      "price": 3.25,
+      "unit": "gpu_hour",
+      "currency": "USD",
+      "gpuCount": 1,
+      "condition": "reserved quote",
+      "availability": "30 day hold",
+      "link": ""
+    }
+  ]
+}

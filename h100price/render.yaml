@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gpu-rental-track
+    runtime: static
+    buildCommand: "true"
+    staticPublishPath: ./static
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

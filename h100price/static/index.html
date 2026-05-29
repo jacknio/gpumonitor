@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GPU Rental Track</title>
+    <link rel="stylesheet" href="/styles.css?v=7" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" id="brandMark">H100</div>
+          <div>
+            <h1>GPU Rental Track</h1>
+            <p id="generatedAt">Waiting for data</p>
+            <p class="owner-contact">
+              By haofengfu · For feedback contact
+              <a href="mailto:haofengfu@hotmail.com">haofengfu@hotmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="top-actions">
+          <a class="download-action" href="/exports/gpu_rental_prices.xlsx" download>
+            Excel
+          </a>
+          <button id="refreshBtn" class="primary-action" type="button">
+            <span class="refresh-icon"></span>
+            Refresh
+          </button>
+        </div>
+      </header>
+
+      <section class="control-strip" aria-label="Filters">
+        <div class="field">
+          <span>GPU model</span>
+          <div class="model-tabs" id="modelTabs" role="tablist" aria-label="GPU model"></div>
+        </div>
+        <label class="field">
+          <span>Source</span>
+          <select id="sourceFilter">
+            <option value="all">All sources</option>
+          </select>
+        </label>
+      </section>
+
+      <main class="workspace">
+        <section class="main-column">
+          <section class="kpi-row" id="kpis"></section>
+
+          <section class="chart-section">
+            <div class="section-heading">
+              <div>
+                <h2>Market Trend</h2>
+                <p id="chartSubtitle">Daily median rental price per H100 GPU-hour</p>
+              </div>
+              <div class="chart-controls">
+                <div class="chart-tabs" id="chartModeTabs" aria-label="Trend statistic">
+                  <button type="button" data-mode="median" class="active">Median</button>
+                  <button type="button" data-mode="average">Average</button>
+                </div>
+                <div class="legend">
+                  <span><i class="rental"></i>Rental</span>
+                </div>
+              </div>
+            </div>
+            <canvas id="trendChart" height="280"></canvas>
+            <div id="chartTooltip" class="chart-tooltip" role="status" aria-live="polite"></div>
+          </section>
+
+          <section class="table-section">
+            <div class="section-heading">
+              <div>
+                <h2>Observed Prices</h2>
+                <p id="tableCount">No rows yet</p>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Source</th>
+                    <th>Item</th>
+                    <th>Condition</th>
+                    <th>Price</th>
+                    <th>Normalized</th>
+                    <th>Observed</th>
+                  </tr>
+                </thead>
+                <tbody id="priceRows"></tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+
+        <aside class="side-column">
+          <section class="side-section">
+            <div class="section-heading compact">
+              <h2>Source Health</h2>
+              <span id="coverage">0/0</span>
+            </div>
+            <div id="sourceHealth" class="health-list"></div>
+          </section>
+
+          <section class="side-section">
+            <div class="section-heading compact">
+              <h2>Setup</h2>
+              <span id="setupCount">0 missing</span>
+            </div>
+            <div id="setupList" class="setup-list"></div>
+          </section>
+
+          <section class="side-section">
+            <div class="section-heading compact">
+              <h2>Signals</h2>
+            </div>
+            <div id="signals" class="signal-list"></div>
+          </section>
+        </aside>
+      </main>
+    </div>
+    <script src="/app.js?v=9"></script>
+  </body>
+</html>
