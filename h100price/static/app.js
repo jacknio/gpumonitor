@@ -155,8 +155,8 @@ function renderError(err) {
 function render() {
   const data = state.data;
   if (!data) return;
-  const runLabel = data.staticSnapshot ? "Static snapshot" : "Live run";
-  els.generatedAt.textContent = `${runLabel} - ${fmtObserved(data.staticExportedAt || data.generatedAt)}`;
+  const runLabel = data.staticSnapshot ? "Latest data pull" : "Live run";
+  els.generatedAt.textContent = `${runLabel} - ${fmtObserved(data.generatedAt)}`;
   els.coverage.textContent = data.coverage || "0/0";
   if (els.brandMark) els.brandMark.textContent = data.model || state.model;
   populateModels(data);
@@ -335,7 +335,7 @@ function renderSignals(data) {
   const interval = Number(tracker.intervalHours || 0);
   const samplesPerDay = interval ? 24 / interval : null;
   const tracking = data.staticSnapshot
-    ? `<div class="signal-row"><strong>Static publish</strong><span>Snapshot exported ${escapeHtml(fmtObserved(data.staticExportedAt || data.generatedAt))}.</span></div>`
+    ? `<div class="signal-row"><strong>Latest data pull</strong><span>Data pulled ${escapeHtml(fmtObserved(data.generatedAt))}.</span></div>`
     : tracker.enabled && tracker.mode === "interval"
     ? `<div class="signal-row"><strong>Intraday tracking</strong><span>Every ${escapeHtml(interval)} hours (${escapeHtml(fmtNumber(samplesPerDay, samplesPerDay % 1 === 0 ? 0 : 1))} samples/day). Next run ${escapeHtml(fmtObserved(tracker.nextRunAt))}.</span></div>`
     : tracker.enabled

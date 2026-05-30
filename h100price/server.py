@@ -1361,7 +1361,7 @@ def latest_payload_for_model(model: str) -> dict[str, Any]:
         statuses,
         run_id=run_id,
         demo=False,
-        history=load_history(model=selected_model),
+        history=load_history(limit=int(os.getenv("H100_STATIC_HISTORY_LIMIT", "100000")), model=selected_model),
         model=selected_model,
         model_counts=model_counts,
     )
