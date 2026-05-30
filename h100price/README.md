@@ -62,6 +62,10 @@ Vast.ai is the only source used by default:
 
 - Vast.ai live bundles API: `VAST_API_KEY`
 
+For local runs, the API key can also live outside the repo at
+`../gpumonitor_private/vast_api_key.txt`. Keeping it outside `h100price/`
+prevents accidental GitHub uploads.
+
 Other live/API-backed sources are disabled by default. Set
 `H100_INCLUDE_OTHER_LIVE_SOURCES=1` if you want to include them again:
 

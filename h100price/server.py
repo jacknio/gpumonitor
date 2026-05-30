@@ -44,7 +44,8 @@ STATIC_EXPORTS_DIR = STATIC_DIR / "exports"
 DB_PATH = DATA_DIR / "h100_prices.sqlite3"
 ALL_CSV_PATH = DATA_DIR / "gpu_rental_prices.csv"
 ALL_XLSX_PATH = DATA_DIR / "gpu_rental_prices.xlsx"
-VAST_API_KEY_PATH = DATA_DIR / "vast_api_key.txt"
+VAST_API_KEY_PATH = APP_DIR.parent / "gpumonitor_private" / "vast_api_key.txt"
+LEGACY_VAST_API_KEY_PATH = DATA_DIR / "vast_api_key.txt"
 CSV_DOWNLOAD_NAME = "gpu_rental_prices.csv"
 XLSX_DOWNLOAD_NAME = "gpu_rental_prices.xlsx"
 
@@ -552,7 +553,9 @@ def collect_runpod_page() -> list[dict[str, Any]]:
 def configured_vast_api_key_path() -> Path:
     raw_path = os.getenv("VAST_API_KEY_FILE")
     if not raw_path:
-        return VAST_API_KEY_PATH
+        if VAST_API_KEY_PATH.exists():
+            return VAST_API_KEY_PATH
+        return LEGACY_VAST_API_KEY_PATH
     path = Path(raw_path).expanduser()
     if not path.is_absolute():
         path = APP_DIR / path
@@ -597,7 +600,7 @@ def vast_search(token: str, filters: dict[str, Any], limit: int) -> list[dict[st
 def collect_vast() -> list[dict[str, Any]]:
     token = vast_api_token()
     if not token:
-        raise RuntimeError("set VAST_API_KEY or data/vast_api_key.txt for live Vast.ai offers")
+        raise RuntimeError("set VAST_API_KEY or ../gpumonitor_private/vast_api_key.txt for live Vast.ai offers")
     limit = int(os.getenv("VAST_LIMIT", "80"))
     results: list[dict[str, Any]] = []
     seen: set[tuple[Any, str]] = set()
@@ -1907,7 +1910,7 @@ class AppHandler(SimpleHTTPRequestHandler):
                     statuses,
                     run_id=run_id,
                     demo=False,
-                    history=load_history(model=model),
+                    history=load_history(limit=100000, model=model),
                     model=model,
                     model_counts=model_counts,
                 )
