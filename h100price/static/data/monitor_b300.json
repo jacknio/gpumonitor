@@ -1,6 +1,6 @@
 {
   "app": "GPU Rental Track",
-  "runId": "20260607T155959Z",
+  "runId": "20260607T164551Z",
   "demo": false,
   "model": "B300",
   "models": [
@@ -11,44 +11,44 @@
     "B300"
   ],
   "modelCounts": {
-    "H100": 32,
-    "H200": 66,
-    "A100": 21,
-    "B200": 44,
-    "B300": 10
+    "H100": 35,
+    "H200": 65,
+    "A100": 23,
+    "B200": 41,
+    "B300": 8
   },
-  "generatedAt": "2026-06-07T16:00:11Z",
+  "generatedAt": "2026-06-07T16:45:57Z",
   "coverage": "1/1 sources live",
   "sourceCounts": {
     "ok": 1,
     "error": 0,
     "total": 1,
-    "observations": 10,
+    "observations": 8,
     "byMarket": {
-      "rental": 10
+      "rental": 8
     }
   },
   "summary": {
-    "rentalMin": 4.173519,
-    "rentalMedian": 6.0005555,
-    "rentalAverage": 6.4519722,
-    "rentalP25": 5.6670134999999995,
-    "rentalP75": 8.00097225
+    "rentalMin": 5.000185,
+    "rentalMedian": 7.0006485,
+    "rentalAverage": 6.75152775,
+    "rentalP25": 5.751759,
+    "rentalP75": 8.001111
   },
   "scenarios": [
     {
       "name": "Lowest rental",
-      "score": 4.173519,
+      "score": 5.000185,
       "unit": "USD/GPU-hr"
     },
     {
       "name": "Median rental",
-      "score": 6.0005555,
+      "score": 7.0006485,
       "unit": "USD/GPU-hr"
     },
     {
       "name": "Average rental",
-      "score": 6.4519722,
+      "score": 6.75152775,
       "unit": "USD/GPU-hr"
     }
   ],
@@ -59,27 +59,27 @@
       "source": "Vast.ai",
       "model": "B300",
       "market": "rental",
-      "short": "Vast.ai $4.17/GPU-hr",
+      "short": "Vast.ai $5.00/GPU-hr",
       "title": "B300 x8",
-      "price": 33.388148,
+      "price": 40.001481,
       "unit": "instance_hour",
       "currency": "USD",
       "gpuCount": 8,
-      "pricePerGpuHour": 4.173519,
-      "normalizedPrice": 4.173519,
+      "pricePerGpuHour": 5.000185,
+      "normalizedPrice": 5.000185,
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38529453,
-        "reliability": 0.9515558,
+        "offerId": 39174256,
+        "reliability": 0.9737387,
         "location": ", CA"
       },
-      "severity": "mid",
-      "alertScore": 4.1735
+      "severity": "high",
+      "alertScore": 5.0002
     },
     {
       "id": "vast.ai-1",
@@ -98,12 +98,12 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404980,
-        "reliability": 0.9884937,
+        "offerId": 38404973,
+        "reliability": 0.9885323,
         "location": ", CA"
       },
       "severity": "high",
@@ -111,62 +111,6 @@
     },
     {
       "id": "vast.ai-2",
-      "ok": true,
-      "source": "Vast.ai",
-      "model": "B300",
-      "market": "rental",
-      "short": "Vast.ai $5.67/GPU-hr",
-      "title": "B300 x8",
-      "price": 45.335556,
-      "unit": "instance_hour",
-      "currency": "USD",
-      "gpuCount": 8,
-      "pricePerGpuHour": 5.666944,
-      "normalizedPrice": 5.666944,
-      "condition": "on-demand marketplace",
-      "availability": "rentable",
-      "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
-      "metadata": {
-        "basis": "official bundles API",
-        "offerId": 38294437,
-        "reliability": 0.9665341,
-        "location": "Taiwan, TW"
-      },
-      "severity": "high",
-      "alertScore": 5.6669
-    },
-    {
-      "id": "vast.ai-3",
-      "ok": true,
-      "source": "Vast.ai",
-      "model": "B300",
-      "market": "rental",
-      "short": "Vast.ai $5.67/GPU-hr",
-      "title": "B300 x4",
-      "price": 22.668889,
-      "unit": "instance_hour",
-      "currency": "USD",
-      "gpuCount": 4,
-      "pricePerGpuHour": 5.667222,
-      "normalizedPrice": 5.667222,
-      "condition": "on-demand marketplace",
-      "availability": "rentable",
-      "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
-      "metadata": {
-        "basis": "official bundles API",
-        "offerId": 38294438,
-        "reliability": 0.9665341,
-        "location": "Taiwan, TW"
-      },
-      "severity": "high",
-      "alertScore": 5.6672
-    },
-    {
-      "id": "vast.ai-4",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -182,19 +126,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404991,
-        "reliability": 0.9704323,
+        "offerId": 38404987,
+        "reliability": 0.9705965,
         "location": ", CA"
       },
       "severity": "high",
       "alertScore": 6.0004
     },
     {
-      "id": "vast.ai-5",
+      "id": "vast.ai-3",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -210,19 +154,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404989,
-        "reliability": 0.9704323,
+        "offerId": 38404990,
+        "reliability": 0.9705965,
         "location": ", CA"
       },
       "severity": "high",
       "alertScore": 6.0007
     },
     {
-      "id": "vast.ai-6",
+      "id": "vast.ai-4",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -238,19 +182,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
         "offerId": 37430321,
-        "reliability": 0.9916886,
+        "reliability": 0.991707,
         "location": "Utah, US"
       },
       "severity": "high",
       "alertScore": 8.0006
     },
     {
-      "id": "vast.ai-7",
+      "id": "vast.ai-5",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -266,19 +210,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 37860221,
-        "reliability": 0.9903728,
+        "offerId": 37860220,
+        "reliability": 0.9903983,
         "location": "Utah, US"
       },
       "severity": "high",
       "alertScore": 8.0011
     },
     {
-      "id": "vast.ai-8",
+      "id": "vast.ai-6",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -294,19 +238,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
         "offerId": 38345025,
-        "reliability": 0.9882463,
+        "reliability": 0.9882889,
         "location": "Utah, US"
       },
       "severity": "high",
       "alertScore": 8.0011
     },
     {
-      "id": "vast.ai-9",
+      "id": "vast.ai-7",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -322,12 +266,12 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 37860229,
-        "reliability": 0.9903728,
+        "offerId": 38345027,
+        "reliability": 0.9882889,
         "location": "Utah, US"
       },
       "severity": "high",
@@ -341,27 +285,27 @@
       "source": "Vast.ai",
       "model": "B300",
       "market": "rental",
-      "short": "Vast.ai $4.17/GPU-hr",
+      "short": "Vast.ai $5.00/GPU-hr",
       "title": "B300 x8",
-      "price": 33.388148,
+      "price": 40.001481,
       "unit": "instance_hour",
       "currency": "USD",
       "gpuCount": 8,
-      "pricePerGpuHour": 4.173519,
-      "normalizedPrice": 4.173519,
+      "pricePerGpuHour": 5.000185,
+      "normalizedPrice": 5.000185,
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38529453,
-        "reliability": 0.9515558,
+        "offerId": 39174256,
+        "reliability": 0.9737387,
         "location": ", CA"
       },
-      "severity": "mid",
-      "alertScore": 4.1735
+      "severity": "high",
+      "alertScore": 5.0002
     },
     {
       "id": "vast.ai-1",
@@ -380,12 +324,12 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404980,
-        "reliability": 0.9884937,
+        "offerId": 38404973,
+        "reliability": 0.9885323,
         "location": ", CA"
       },
       "severity": "high",
@@ -393,62 +337,6 @@
     },
     {
       "id": "vast.ai-2",
-      "ok": true,
-      "source": "Vast.ai",
-      "model": "B300",
-      "market": "rental",
-      "short": "Vast.ai $5.67/GPU-hr",
-      "title": "B300 x8",
-      "price": 45.335556,
-      "unit": "instance_hour",
-      "currency": "USD",
-      "gpuCount": 8,
-      "pricePerGpuHour": 5.666944,
-      "normalizedPrice": 5.666944,
-      "condition": "on-demand marketplace",
-      "availability": "rentable",
-      "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
-      "metadata": {
-        "basis": "official bundles API",
-        "offerId": 38294437,
-        "reliability": 0.9665341,
-        "location": "Taiwan, TW"
-      },
-      "severity": "high",
-      "alertScore": 5.6669
-    },
-    {
-      "id": "vast.ai-3",
-      "ok": true,
-      "source": "Vast.ai",
-      "model": "B300",
-      "market": "rental",
-      "short": "Vast.ai $5.67/GPU-hr",
-      "title": "B300 x4",
-      "price": 22.668889,
-      "unit": "instance_hour",
-      "currency": "USD",
-      "gpuCount": 4,
-      "pricePerGpuHour": 5.667222,
-      "normalizedPrice": 5.667222,
-      "condition": "on-demand marketplace",
-      "availability": "rentable",
-      "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
-      "metadata": {
-        "basis": "official bundles API",
-        "offerId": 38294438,
-        "reliability": 0.9665341,
-        "location": "Taiwan, TW"
-      },
-      "severity": "high",
-      "alertScore": 5.6672
-    },
-    {
-      "id": "vast.ai-4",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -464,19 +352,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404991,
-        "reliability": 0.9704323,
+        "offerId": 38404987,
+        "reliability": 0.9705965,
         "location": ", CA"
       },
       "severity": "high",
       "alertScore": 6.0004
     },
     {
-      "id": "vast.ai-5",
+      "id": "vast.ai-3",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -492,19 +380,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404989,
-        "reliability": 0.9704323,
+        "offerId": 38404990,
+        "reliability": 0.9705965,
         "location": ", CA"
       },
       "severity": "high",
       "alertScore": 6.0007
     },
     {
-      "id": "vast.ai-6",
+      "id": "vast.ai-4",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -520,19 +408,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
         "offerId": 37430321,
-        "reliability": 0.9916886,
+        "reliability": 0.991707,
         "location": "Utah, US"
       },
       "severity": "high",
       "alertScore": 8.0006
     },
     {
-      "id": "vast.ai-7",
+      "id": "vast.ai-5",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -548,19 +436,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 37860221,
-        "reliability": 0.9903728,
+        "offerId": 37860220,
+        "reliability": 0.9903983,
         "location": "Utah, US"
       },
       "severity": "high",
       "alertScore": 8.0011
     },
     {
-      "id": "vast.ai-8",
+      "id": "vast.ai-6",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -576,19 +464,19 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
         "offerId": 38345025,
-        "reliability": 0.9882463,
+        "reliability": 0.9882889,
         "location": "Utah, US"
       },
       "severity": "high",
       "alertScore": 8.0011
     },
     {
-      "id": "vast.ai-9",
+      "id": "vast.ai-7",
       "ok": true,
       "source": "Vast.ai",
       "model": "B300",
@@ -604,12 +492,12 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "latest": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
+      "latest": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 37860229,
-        "reliability": 0.9903728,
+        "offerId": 38345027,
+        "reliability": 0.9882889,
         "location": "Utah, US"
       },
       "severity": "high",
@@ -622,20 +510,20 @@
       "model": "B300",
       "market": "rental",
       "title": "B300 x8",
-      "price": 33.388148,
+      "price": 40.001481,
       "unit": "instance_hour",
       "currency": "USD",
       "gpuCount": 8,
-      "pricePerGpuHour": 4.173519,
-      "normalizedPrice": 4.173519,
+      "pricePerGpuHour": 5.000185,
+      "normalizedPrice": 5.000185,
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38529453,
-        "reliability": 0.9515558,
+        "offerId": 39174256,
+        "reliability": 0.9737387,
         "location": ", CA"
       }
     },
@@ -653,56 +541,12 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404980,
-        "reliability": 0.9884937,
+        "offerId": 38404973,
+        "reliability": 0.9885323,
         "location": ", CA"
-      }
-    },
-    {
-      "source": "Vast.ai",
-      "model": "B300",
-      "market": "rental",
-      "title": "B300 x8",
-      "price": 45.335556,
-      "unit": "instance_hour",
-      "currency": "USD",
-      "gpuCount": 8,
-      "pricePerGpuHour": 5.666944,
-      "normalizedPrice": 5.666944,
-      "condition": "on-demand marketplace",
-      "availability": "rentable",
-      "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "metadata": {
-        "basis": "official bundles API",
-        "offerId": 38294437,
-        "reliability": 0.9665341,
-        "location": "Taiwan, TW"
-      }
-    },
-    {
-      "source": "Vast.ai",
-      "model": "B300",
-      "market": "rental",
-      "title": "B300 x4",
-      "price": 22.668889,
-      "unit": "instance_hour",
-      "currency": "USD",
-      "gpuCount": 4,
-      "pricePerGpuHour": 5.667222,
-      "normalizedPrice": 5.667222,
-      "condition": "on-demand marketplace",
-      "availability": "rentable",
-      "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
-      "metadata": {
-        "basis": "official bundles API",
-        "offerId": 38294438,
-        "reliability": 0.9665341,
-        "location": "Taiwan, TW"
       }
     },
     {
@@ -719,11 +563,11 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404991,
-        "reliability": 0.9704323,
+        "offerId": 38404987,
+        "reliability": 0.9705965,
         "location": ", CA"
       }
     },
@@ -741,11 +585,11 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 38404989,
-        "reliability": 0.9704323,
+        "offerId": 38404990,
+        "reliability": 0.9705965,
         "location": ", CA"
       }
     },
@@ -763,11 +607,11 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
         "offerId": 37430321,
-        "reliability": 0.9916886,
+        "reliability": 0.991707,
         "location": "Utah, US"
       }
     },
@@ -785,11 +629,11 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 37860221,
-        "reliability": 0.9903728,
+        "offerId": 37860220,
+        "reliability": 0.9903983,
         "location": "Utah, US"
       }
     },
@@ -807,11 +651,11 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
         "offerId": 38345025,
-        "reliability": 0.9882463,
+        "reliability": 0.9882889,
         "location": "Utah, US"
       }
     },
@@ -829,11 +673,11 @@
       "condition": "on-demand marketplace",
       "availability": "rentable",
       "link": "https://cloud.vast.ai/create/",
-      "observedAt": "2026-06-07T16:00:07Z",
+      "observedAt": "2026-06-07T16:45:53Z",
       "metadata": {
         "basis": "official bundles API",
-        "offerId": 37860229,
-        "reliability": 0.9903728,
+        "offerId": 38345027,
+        "reliability": 0.9882889,
         "location": "Utah, US"
       }
     }
@@ -843,14 +687,118 @@
       "source": "Vast.ai",
       "market": "rental",
       "ok": true,
-      "count": 173,
-      "latencyMs": 7425,
+      "count": 172,
+      "latencyMs": 2579,
       "error": "",
       "requires": "",
       "link": "https://docs.vast.ai/api-reference/search/search-offers"
     }
   ],
   "history": [
+    {
+      "observedAt": "2026-06-07T16:45:53Z",
+      "source": "Vast.ai",
+      "model": "B300",
+      "market": "rental",
+      "title": "B300 x1",
+      "normalizedPrice": 5.005926,
+      "pricePerGpuHour": 5.005926,
+      "price": 5.005926,
+      "unit": "instance_hour",
+      "currency": "USD",
+      "gpuCount": 1
+    },
+    {
+      "observedAt": "2026-06-07T16:45:53Z",
+      "source": "Vast.ai",
+      "model": "B300",
+      "market": "rental",
+      "title": "B300 x1",
+      "normalizedPrice": 8.002222,
+      "pricePerGpuHour": 8.002222,
+      "price": 8.002222,
+      "unit": "instance_hour",
+      "currency": "USD",
+      "gpuCount": 1
+    },
+    {
+      "observedAt": "2026-06-07T16:45:53Z",
+      "source": "Vast.ai",
+      "model": "B300",
+      "market": "rental",
+      "title": "B300 x2",
+      "normalizedPrice": 6.000741,
+      "pricePerGpuHour": 6.000741,
+      "price": 12.001481,
+      "unit": "instance_hour",
+      "currency": "USD",
+      "gpuCount": 2
+    },
+    {
+      "observedAt": "2026-06-07T16:45:53Z",
+      "source": "Vast.ai",
+      "model": "B300",
+      "market": "rental",
+      "title": "B300 x2",
+      "normalizedPrice": 8.001111,
+      "pricePerGpuHour": 8.001111,
+      "price": 16.002222,
+      "unit": "instance_hour",
+      "currency": "USD",
+      "gpuCount": 2
+    },
+    {
+      "observedAt": "2026-06-07T16:45:53Z",
+      "source": "Vast.ai",
+      "model": "B300",
+      "market": "rental",
+      "title": "B300 x2",
+      "normalizedPrice": 8.001111,
+      "pricePerGpuHour": 8.001111,
+      "price": 16.002222,
+      "unit": "instance_hour",
+      "currency": "USD",
+      "gpuCount": 2
+    },
+    {
+      "observedAt": "2026-06-07T16:45:53Z",
+      "source": "Vast.ai",
+      "model": "B300",
+      "market": "rental",
+      "title": "B300 x4",
+      "normalizedPrice": 6.00037,
+      "pricePerGpuHour": 6.00037,
+      "price": 24.001481,
+      "unit": "instance_hour",
+      "currency": "USD",
+      "gpuCount": 4
+    },
+    {
+      "observedAt": "2026-06-07T16:45:53Z",
+      "source": "Vast.ai",
+      "model": "B300",
+      "market": "rental",
+      "title": "B300 x4",
+      "normalizedPrice": 8.000556,
+      "pricePerGpuHour": 8.000556,
+      "price": 32.002222,
+      "unit": "instance_hour",
+      "currency": "USD",
+      "gpuCount": 4
+    },
+    {
+      "observedAt": "2026-06-07T16:45:53Z",
+      "source": "Vast.ai",
+      "model": "B300",
+      "market": "rental",
+      "title": "B300 x8",
+      "normalizedPrice": 5.000185,
+      "pricePerGpuHour": 5.000185,
+      "price": 40.001481,
+      "unit": "instance_hour",
+      "currency": "USD",
+      "gpuCount": 8
+    },
     {
       "observedAt": "2026-06-07T16:00:07Z",
       "source": "Vast.ai",
@@ -29793,13 +29741,13 @@
       "mode": "interval",
       "runAt": null,
       "intervalHours": 1.0,
-      "lastRunId": "20260607T145959Z",
+      "lastRunId": "20260607T155959Z",
       "lastStartedAt": "2026-06-07T15:59:59Z",
-      "lastFinishedAt": "2026-06-07T15:00:05Z",
+      "lastFinishedAt": "2026-06-07T16:00:11Z",
       "lastError": "",
-      "nextRunAt": "2026-06-07T16:00:00Z"
+      "nextRunAt": "2026-06-07T17:00:00Z"
     }
   },
   "staticSnapshot": true,
-  "staticExportedAt": "2026-06-07T16:00:10Z"
+  "staticExportedAt": "2026-06-07T16:45:57Z"
 }
